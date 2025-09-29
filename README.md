@@ -27,7 +27,9 @@ Backend API: Django REST Framework for data processing and storage.
 Web Portals: Factory Portal for data input and trends; HQ Portal for network-wide insights and leaderboards.
 
 For detailed technical specifications, see the Technical Documentation.
+
 ---
+
 ✨ Features
 
 
@@ -51,7 +53,9 @@ Historical Visualization: Interactive charts for analyzing trends.
 
 
 Compliance Reporting: Automated reports for EU CBAM and other regulations.
+
 ---
+
 👥 Stakeholders
 
 
@@ -63,7 +67,9 @@ KTDA Manager: Oversees emissions reporting and compliance across factories.
 
 
 Factory Manager: Inputs energy data and monitors factory-level emissions.
+
 ---
+
 🛠️ Technology Stack
 
 
@@ -83,7 +89,9 @@ Frontend: React.js (recommended) for web portals.
 
 
 API Docs: Swagger UI, Redoc, Postman.
+
 ---
+
 🚀 Getting Started
 
 Prerequisites
@@ -117,6 +125,7 @@ Installation
 
 
 Clone the repository:
+
 ```sh
 git clone https://github.com/akirachix/carbontrack-backend.git
 cd carbontrack-backend
@@ -130,6 +139,7 @@ Create and activate a virtual environment:
 
 
 Linux/macOS:
+
 ```sh
 python -m venv venv
 source venv/bin/activate
@@ -137,6 +147,7 @@ source venv/bin/activate
 ```
 
 Windows:
+
 ```sh
 python -m venv venv
 venv\Scripts\activate
@@ -144,6 +155,7 @@ venv\Scripts\activate
 ```
 
 Install dependencies:
+
 ```sh
 uv pip install -r requirements.txt
 
@@ -151,34 +163,39 @@ uv pip install -r requirements.txt
 
 Set environment variables in .env:
 
-DATABASE_URL
-SECRET_KEY
+DATABASE_URL, 
+SECRET_KEY, 
 MQTT_BROKER_URL=mqtt://broker.hivemq.com:1883
 
 
 
 Run database migrations:
+
 ```sh
 python manage.py migrate
 
 ```
 
 Create a superuser for admin access:
+
 ```sh
 python manage.py createsuperuser
 ```
 
 
 Collect static files:
+
 ```sh
 python manage.py collectstatic
 
 ```
 
 Start the development server:
+
 ```sh
 python manage.py runserver
 ```
+
 IoT Setup
 
 
@@ -214,7 +231,9 @@ Redoc
 Postman Collection
 
 API root: https://carbon-track-680e7cff8d27.herokuapp.com/api/
+
 ---
+
 📊 Success Metrics
 
 
