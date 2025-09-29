@@ -46,7 +46,7 @@ Installed in factory chimneys for real-time monitoring.
 - **Features**:
   - Real-time tracking: CO₂, temperature, velocity.
   - Alerts: For high emissions or abnormal temperatures/flows.
-  - Data Aggregation: To kg CO₂/hr for dashboards.
+  - Data Aggregation: To kg CO₂/s for dashboards.
   - Transmission: Every 5 seconds via TLS-encrypted MQTT to HiveMQ broker.
 - **Implementation Notes**:
   - Firmware: Written in C++ for ESP32 (use Arduino IDE or PlatformIO).
