@@ -6,14 +6,14 @@ Carbon Track is a carbon emissions monitoring system designed for KTDA's 67 tea 
 
 This document provides technical details on architecture, components, implementation, and operations. It is based on the Product Requirements Document (PRD) and assumes familiarity with the problem statement, objectives, stakeholders, and core features outlined there.
 
-<h1 style="color: blue;"> Key Objectives </h1>
+<h3 style="color: lightblue;"> Key Objectives </h3>
 
 - Real-time CO₂ monitoring with high accuracy.
 - User-friendly energy usage input.
 - Centralized dashboard with leaderboards.
 - Automated compliance reporting.
 
-<h1 style="color: blue;">Assumptions </h1>
+<h3 style="color: lightblue;">Assumptions </h3>
 
 - Not all boilers are turned on simultaneously.
 - Constant pressure and temperature across chimneys.
@@ -21,11 +21,12 @@ This document provides technical details on architecture, components, implementa
 - Stable power and connectivity.
 - Atmospheric pressure ~101 kPa; average gas velocity 2-5 m/s.
 
-<h1 style="color: blue;">Out of Scope </h1>
+<h3 style="color: lightblue;">Out of Scope </h3>
 
 - Agentic AI for emission pattern prediction (due to data and resource constraints).
 
-## 2. System Architecture
+<h2 style="color: blue;">2. System Architecture</h2>
+
 The system follows a modular, IoT-cloud-web architecture:
 - **IoT Layer**: Sensors in factory chimneys collect data and transmit via MQTT.
 - **Backend Layer**: Django REST API handles data ingestion, processing, storage, and API endpoints.
@@ -37,9 +38,10 @@ The system follows a modular, IoT-cloud-web architecture:
 High-level diagram (use a tool like Draw.io to create and embed an image here):
 - IoT Device (ESP32) → MQTT Publish → Backend Subscribe/Process → Store in DB → Query via API → Render in Portals.
 
-## 3. Components
+<h2 style="color: blue;">  3. Components</h2>
 
-### 3.1 IoT Device (Carbon Track IoT)
+<h3 style="color: lightblue;"> 3.1 IoT Device (Carbon Track IoT)</h3>
+
 Installed in factory chimneys for real-time monitoring.
 - **Hardware**:
   - ESP32 Microcontroller: Handles data aggregation and transmission.
@@ -57,7 +59,8 @@ Installed in factory chimneys for real-time monitoring.
   - Libraries: PubSubClient for MQTT, relevant sensor libs (e.g., MH-Z19 for CO₂).
   - Power: Stable supply assumed; add battery backup if needed.
 
-### 3.2 Backend (Django REST Framework)
+<h3 style="color: lightblue;">3.2 Backend (Django REST Framework)</h3>
+
 The core API for data management.
 - **Technology Stack** (from provided info):
   - Django 4.2+.
@@ -73,7 +76,8 @@ The core API for data management.
   - Calculations: Correlate emissions with energy usage; generate reports.
 - **Repository**: https://github.com/akirachix/carbontrack-backend.git (clone and set up as per installation guide below).
 
-### 3.3 Database Schema (PostgreSQL)
+<h3 style="color: lightblue;">3.3 Database Schema (PostgreSQL)</h3>
+
 Use Django models to define schema. Key models (inferred from features; create in `models.py` files):
 - **User**: Extends Django's AbstractUser; fields: role (KTDA/Factory), factory_id (ForeignKey).
 - **Factory**: Fields: name, location, chimney_dimensions (JSON for width/height).
@@ -85,7 +89,8 @@ Use Django models to define schema. Key models (inferred from features; create i
 
 Run `python manage.py makemigrations` and `python manage.py migrate` to apply.
 
-### 3.4 Frontend Web Portals
+<h3 style="color: lightblue;">3.4 Frontend Web Portals</h3>
+
 - **Factory Portal**: For managers to input energy data, view real-time emissions/trends.
 - **HQ Portal**: For KTDA leadership; includes leaderboards, network-wide views.
 - **Tech Stack Suggestion**: React.js with Chart.js for visualizations; Axios for API calls.
@@ -97,7 +102,8 @@ Run `python manage.py makemigrations` and `python manage.py migrate` to apply.
 
 If not implemented, create a separate repo (e.g., carbontrack-frontend) and link via API.
 
-## 4. API Endpoints
+<h2 style="color: blue;">4. API Endpoints</h2>
+
 Documented via Swagger/Redoc (links provided: https://carbon-track-680e7cff8d27.herokuapp.com/api/schema/swagger-ui/).
 Key Endpoints (expand in code):
 - `/api/register/`: POST for user signup.
@@ -110,14 +116,16 @@ Key Endpoints (expand in code):
 
 Use Postman collection: https://documenter.getpostman.com/view/45609889/2sB3HooJrj for testing.
 
-## 5. Installation and Deployment
+<h2 style="color: blue;"> 5. Installation and Deployment</h2>
+
 ### Prerequisites
 - Python 3.13+.
 - pip/uv for packages.
 - PostgreSQL database.
 - Git.
 
-### Installation Steps (Backend)
+<h3 style="color: lightblue;">Installation Steps (Backend)</h3>
+
 1. Clone repo: `git clone https://github.com/akirachix/carbontrack-backend.git`.
 2. `cd carbontrack-backend`.
 3. Create venv: `python -m venv venv` (activate accordingly).
@@ -128,22 +136,26 @@ Use Postman collection: https://documenter.getpostman.com/view/45609889/2sB3HooJ
 8. Collect static: `python manage.py collectstatic`.
 9. Run server: `python manage.py runserver`.
 
-### Deployment
+<h3 style="color: lightblue;"> Deployment</h3>
+
 - Heroku: Push to Heroku git; configure add-ons for PostgreSQL and MQTT.
 - Alternatives: Dockerize for AWS/EC2; use Procfile (as in repo) for gunicorn.
 
-### IoT Setup
+<h3 style="color: lightblue;">IoT Setup</h3>
+
 - Flash ESP32 firmware.
 - Configure WiFi/MQTT credentials.
 - Install sensors per chimney specs.
 
-## 6. Security Considerations
+<h2 style="color: blue;">6. Security Considerations</h2>
+
 - Encryption: TLS for MQTT and HTTPS for API.
 - Auth: Token-based; role-based permissions (e.g., Factory Managers can't access HQ data).
 - Data Validation: Sanitize inputs to prevent injection.
 - Monitoring: Log alerts for anomalies.
 
-## 7. Testing and Monitoring
+<h2 style="color: blue;">7. Testing and Monitoring</h2>
+
 - **Unit Tests**: Use Django's TestCase for models/views.
 - **Integration Tests**: Postman for API; simulate MQTT publishes.
 - **Success Metrics (from PRD)**:
@@ -152,12 +164,14 @@ Use Postman collection: https://documenter.getpostman.com/view/45609889/2sB3HooJ
   - Emission Impact: 20%+ factories meeting targets.
 - Tools: Sentry for errors; Prometheus for metrics.
 
-## 8. Maintenance and Scaling
+<h2 style="color: blue;"> 8. Maintenance and Scaling</h2>
+
 - Updates: Use Git for version control.
 - Scaling: Add Redis for caching; horizontal scaling for high-traffic portals.
 - Risks: Connectivity issues in remote factories; mitigate with offline buffering.
 
-## 9. Competitor Analysis and Compliance
+<h2 style="color: blue;"> 9. Competitor Analysis and Compliance</h2>
+
 - Competitors: Similar systems like Siemens IoT or custom ERP integrations.
 - Compliance: Aligns with EU CBAM; generate reports in CSV/PDF for export.
 
