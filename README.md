@@ -27,7 +27,7 @@ Backend API: Django REST Framework for data processing and storage.
 Web Portals: Factory Portal for data input and trends; HQ Portal for network-wide insights and leaderboards.
 
 For detailed technical specifications, see the Technical Documentation.
-
+---
 ✨ Features
 
 
@@ -51,7 +51,7 @@ Historical Visualization: Interactive charts for analyzing trends.
 
 
 Compliance Reporting: Automated reports for EU CBAM and other regulations.
-
+---
 👥 Stakeholders
 
 
@@ -63,7 +63,7 @@ KTDA Manager: Oversees emissions reporting and compliance across factories.
 
 
 Factory Manager: Inputs energy data and monitors factory-level emissions.
-
+---
 🛠️ Technology Stack
 
 
@@ -83,7 +83,7 @@ Frontend: React.js (recommended) for web portals.
 
 
 API Docs: Swagger UI, Redoc, Postman.
-
+---
 🚀 Getting Started
 
 Prerequisites
