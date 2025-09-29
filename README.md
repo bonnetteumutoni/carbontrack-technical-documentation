@@ -117,10 +117,10 @@ Installation
 
 
 Clone the repository:
-
+```sh
 git clone https://github.com/akirachix/carbontrack-backend.git
 cd carbontrack-backend
-
+```
 
 
 Create and activate a virtual environment:
@@ -130,55 +130,55 @@ Create and activate a virtual environment:
 
 
 Linux/macOS:
-
+```sh
 python -m venv venv
 source venv/bin/activate
 
-
+```
 
 Windows:
-
+```sh
 python -m venv venv
 venv\Scripts\activate
 
-
+```
 
 Install dependencies:
-
+```sh
 uv pip install -r requirements.txt
 
-
+```
 
 Set environment variables in .env:
 
-DATABASE_URL=postgresql://user:password@localhost:5432/carbontrack
-SECRET_KEY=your-secret-key
+DATABASE_URL
+SECRET_KEY
 MQTT_BROKER_URL=mqtt://broker.hivemq.com:1883
 
 
 
 Run database migrations:
-
+```sh
 python manage.py migrate
 
-
+```
 
 Create a superuser for admin access:
-
+```sh
 python manage.py createsuperuser
-
+```
 
 
 Collect static files:
-
+```sh
 python manage.py collectstatic
 
-
+```
 
 Start the development server:
-
+```sh
 python manage.py runserver
-
+```
 IoT Setup
 
 
@@ -214,7 +214,7 @@ Redoc
 Postman Collection
 
 API root: https://carbon-track-680e7cff8d27.herokuapp.com/api/
-
+---
 📊 Success Metrics
 
 
@@ -230,11 +230,7 @@ Data Compliance: 100% factories submitting energy data on schedule.
 
 
 Emission Impact: 20%+ factories meeting emissions targets.
-
-🤝 Contributing
-
-We welcome contributions! Fork the repo, create a feature branch, and submit a pull request. Refer to the Technical Documentation for implementation details.
-
+---
 📜 License
 
 © 2025 GitHub, Inc. Licensed under the MIT License.
