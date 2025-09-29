@@ -1,4 +1,4 @@
-Carbon Track 🌱
+<h1 style="color: blue" >Carbon Track 🌱</h1>
 
 ---
 
@@ -8,7 +8,7 @@ Carbon Track is a real-time carbon emissions monitoring system for KTDA's 67 tea
 
 ---
 
-📋 Overview
+<h1 style="color: blue" >📋 Overview</h1>
 
 Carbon Track enables KTDA tea factories to monitor and manage carbon emissions in real-time, supporting compliance with environmental regulations and improving operational efficiency. The system consists of:
 
@@ -30,9 +30,7 @@ For detailed technical specifications, see the Technical Documentation.
 
 ---
 
-✨ Features
-
-
+<h1 style="color: blue" >✨ Features</h1>
 
 
 
@@ -55,9 +53,7 @@ Historical Visualization: Interactive charts for analyzing trends.
 Compliance Reporting: Automated reports for EU CBAM and other regulations.
 
 ---
-
-👥 Stakeholders
-
+<h1 style="color: blue" >👥 Stakeholders</h1>
 
 
 
@@ -70,9 +66,7 @@ Factory Manager: Inputs energy data and monitors factory-level emissions.
 
 ---
 
-🛠️ Technology Stack
-
-
+<h1 style="color: blue" >🛠️ Technology Stack</h1>
 
 
 
@@ -92,7 +86,8 @@ API Docs: Swagger UI, Redoc, Postman.
 
 ---
 
-🚀 Getting Started
+<h1 style="color: blue" >🚀 Getting Started</h1>
+
 
 Prerequisites
 
@@ -212,7 +207,8 @@ Configure WiFi and MQTT credentials for HiveMQ.
 
 Install sensors 1-2 meters up factory chimneys for accurate sampling.
 
-🌐 API Documentation
+<h1 style="color: blue" >🌐 API Documentation</h1>
+
 
 Explore endpoints via:
 
@@ -234,9 +230,7 @@ API root: https://carbon-track-680e7cff8d27.herokuapp.com/api/
 
 ---
 
-📊 Success Metrics
-
-
+<h1 style="color: blue" >📊 Success Metrics</h1>
 
 
 
@@ -254,7 +248,7 @@ Emission Impact: 20%+ factories meeting emissions targets.
 
  [Technical Documentation](technicalDocumentation.md)
  
+<h1 style="color: blue" >📜 License</h1>
 
-📜 License
 
 © 2025 GitHub, Inc. Licensed under the MIT License.
