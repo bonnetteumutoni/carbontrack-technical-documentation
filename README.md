@@ -1,12 +1,12 @@
 Carbon Track 🌱
 
-
+---
 
 
 
 Carbon Track is a real-time carbon emissions monitoring system for KTDA's 67 tea factories in Kenya, built to ensure compliance with global regulations like the EU CBAM. It integrates IoT sensors, a Django REST API, and two web portals (Factory and HQ) to track CO₂ emissions, input energy data, and generate compliance reports.
 
-
+---
 
 📋 Overview
 
