@@ -1,36 +1,58 @@
-Carbon Track
-
-Overview
-
-Carbon Track is a carbon emissions monitoring system for KTDA's 67 tea factories in Kenya, designed to ensure compliance with global regulations like the EU CBAM. It leverages IoT sensors, a Django REST API, and two web portals (Factory and HQ) to provide real-time CO₂ tracking, energy usage input, and compliance reporting. The system enables factory managers to input energy data and view emissions trends, while KTDA leadership monitors network-wide performance via leaderboards and reports.
-
-For detailed technical specifications, see Technical Documentation.
-
-Features
+Carbon Track 🌱
 
 
 
 
 
-Real-Time CO₂ Monitoring: IoT sensors in factory chimneys measure CO₂ (ppm), temperature (°C), and gas velocity (m/s) for accurate emissions calculations.
+Carbon Track is a real-time carbon emissions monitoring system for KTDA's 67 tea factories in Kenya, built to ensure compliance with global regulations like the EU CBAM. It integrates IoT sensors, a Django REST API, and two web portals (Factory and HQ) to track CO₂ emissions, input energy data, and generate compliance reports.
 
 
 
-Energy Usage Input: Factory managers enter energy data (e.g., firewood, diesel) via a user-friendly web portal.
+📋 Overview
+
+Carbon Track enables KTDA tea factories to monitor and manage carbon emissions in real-time, supporting compliance with environmental regulations and improving operational efficiency. The system consists of:
 
 
 
-Factory Emissions Leaderboard: Centralized dashboard ranking factories by emissions performance.
+
+
+IoT Sensors: Measure CO₂, temperature, and gas velocity in factory chimneys.
 
 
 
-Historical Emission Visualization: Interactive charts for analyzing trends and compliance.
+Backend API: Django REST Framework for data processing and storage.
 
 
 
-Compliance Reporting: Automated reports for regulatory requirements.
+Web Portals: Factory Portal for data input and trends; HQ Portal for network-wide insights and leaderboards.
 
-Stakeholders
+For detailed technical specifications, see the Technical Documentation.
+
+✨ Features
+
+
+
+
+
+Real-Time CO₂ Monitoring: Tracks emissions (ppm) and converts to kg/s using IoT sensors.
+
+
+
+Energy Usage Input: User-friendly portal for factory managers to log energy data (e.g., firewood, diesel).
+
+
+
+Emissions Leaderboard: Ranks factories by emissions performance.
+
+
+
+Historical Visualization: Interactive charts for analyzing trends.
+
+
+
+Compliance Reporting: Automated reports for EU CBAM and other regulations.
+
+👥 Stakeholders
 
 
 
@@ -42,7 +64,7 @@ KTDA Manager: Oversees emissions reporting and compliance across factories.
 
 Factory Manager: Inputs energy data and monitors factory-level emissions.
 
-Technology Stack
+🛠️ Technology Stack
 
 
 
@@ -56,11 +78,13 @@ Backend: Django 4.2+, Django REST Framework, PostgreSQL, HiveMQ MQTT broker.
 
 
 
-Frontend: React.js (suggested) for Factory and HQ web portals.
+Frontend: React.js (recommended) for web portals.
 
 
 
-API Docs: Swagger UI and Redoc for endpoint documentation.
+API Docs: Swagger UI, Redoc, Postman.
+
+🚀 Getting Started
 
 Prerequisites
 
@@ -125,21 +149,11 @@ uv pip install -r requirements.txt
 
 
 
-Set environment variables (e.g., in .env):
+Set environment variables in .env:
 
-
-
-
-
-DATABASE_URL: PostgreSQL connection string.
-
-
-
-SECRET_KEY: Django secret key.
-
-
-
-MQTT_BROKER_URL: HiveMQ broker URL.
+DATABASE_URL=postgresql://user:password@localhost:5432/carbontrack
+SECRET_KEY=your-secret-key
+MQTT_BROKER_URL=mqtt://broker.hivemq.com:1883
 
 
 
@@ -165,24 +179,6 @@ Start the development server:
 
 python manage.py runserver
 
-API Documentation
-
-
-
-
-
-Swagger UI: https://carbon-track-680e7cff8d27.herokuapp.com/api/schema/swagger-ui/
-
-
-
-Redoc: https://carbon-track-680e7cff8d27.herokuapp.com/api/schema/redoc/
-
-
-
-Postman: https://documenter.getpostman.com/view/45609889/2sB3HooJrj
-
-Access the API root at https://carbon-track-680e7cff8d27.herokuapp.com/api/ to explore endpoints.
-
 IoT Setup
 
 
@@ -199,23 +195,27 @@ Configure WiFi and MQTT credentials for HiveMQ.
 
 Install sensors 1-2 meters up factory chimneys for accurate sampling.
 
-Usage
+🌐 API Documentation
+
+Explore endpoints via:
 
 
 
 
 
-Factory Managers: Use the Factory Portal to input energy data and view real-time emissions.
+Swagger UI
 
 
 
-KTDA Leadership: Access the HQ Portal for network-wide insights and leaderboards.
+Redoc
 
 
 
-Developers: Use API endpoints for user auth, data CRUD, and compliance reports.
+Postman Collection
 
-Success Metrics
+API root: https://carbon-track-680e7cff8d27.herokuapp.com/api/
+
+📊 Success Metrics
 
 
 
@@ -231,10 +231,10 @@ Data Compliance: 100% factories submitting energy data on schedule.
 
 Emission Impact: 20%+ factories meeting emissions targets.
 
-Contributing
+🤝 Contributing
 
-Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request. Follow the Technical Documentation for implementation details.
+We welcome contributions! Fork the repo, create a feature branch, and submit a pull request. Refer to the Technical Documentation for implementation details.
 
-License
+📜 License
 
-© 2025 GitHub, Inc.
+© 2025 GitHub, Inc. Licensed under the MIT License.
