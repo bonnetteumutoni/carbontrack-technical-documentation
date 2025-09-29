@@ -252,7 +252,7 @@ Emission Impact: 20%+ factories meeting emissions targets.
 
 ---
 
- [Product Documentation](technicalDocumentation.md)
+ [Technical Documentation](technicalDocumentation.md)
  
 
 📜 License
