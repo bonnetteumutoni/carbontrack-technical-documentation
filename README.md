@@ -252,6 +252,9 @@ Emission Impact: 20%+ factories meeting emissions targets.
 
 ---
 
+ [Product Documentation](technicalDocumentation.md)
+ 
+
 📜 License
 
 © 2025 GitHub, Inc. Licensed under the MIT License.
