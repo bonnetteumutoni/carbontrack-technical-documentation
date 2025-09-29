@@ -1,24 +1,28 @@
 # Carbon Track Technical Documentation
 
-## 1. Introduction
+<h1 style="color: blue;">1. Introduction</h1>
+
 Carbon Track is a carbon emissions monitoring system designed for KTDA's 67 tea factories in Kenya. It addresses the need for real-time CO₂ emissions tracking to comply with global regulations like the EU CBAM. The system integrates IoT sensors for data collection, a backend API for processing, and two web portals (factory-level and HQ-level) for visualization and management.
 
 This document provides technical details on architecture, components, implementation, and operations. It is based on the Product Requirements Document (PRD) and assumes familiarity with the problem statement, objectives, stakeholders, and core features outlined there.
 
-### Key Objectives 
+<h1 style="color: blue;"> Key Objectives </h1>
+
 - Real-time CO₂ monitoring with high accuracy.
 - User-friendly energy usage input.
 - Centralized dashboard with leaderboards.
 - Automated compliance reporting.
 
-### Assumptions 
+<h1 style="color: blue;">Assumptions </h1>
+
 - Not all boilers are turned on simultaneously.
 - Constant pressure and temperature across chimneys.
 - Sensors installed 1-2 meters up chimneys for laminar flow.
 - Stable power and connectivity.
 - Atmospheric pressure ~101 kPa; average gas velocity 2-5 m/s.
 
-### Out of Scope 
+<h1 style="color: blue;">Out of Scope </h1>
+
 - Agentic AI for emission pattern prediction (due to data and resource constraints).
 
 ## 2. System Architecture
