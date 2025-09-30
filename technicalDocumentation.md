@@ -137,7 +137,7 @@ Use Postman collection: https://documenter.getpostman.com/view/45609889/2sB3HooJ
 
 <h3 style="color: orange;"> Deployment</h3>
 
-- Heroku: Push to Heroku git; configure add-ons for PostgreSQL and MQTT.
+- Heroku: Push to GitHub and host it on Heroku; configure add-ons for PostgreSQL and MQTT.
 - Alternatives: Dockerize for AWS/EC2; use Procfile (as in repo) for gunicorn.
 
 <h3 style="color: orange;">IoT Setup</h3>
