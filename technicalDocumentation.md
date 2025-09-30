@@ -169,9 +169,3 @@ Use Postman collection: https://documenter.getpostman.com/view/45609889/2sB3HooJ
 - Scaling: Add Redis for caching; horizontal scaling for high-traffic portals.
 - Risks: Connectivity issues in remote factories; mitigate with offline buffering.
 
-<h2 style="color: blue;"> 9. Competitor Analysis and Compliance</h2>
-
-- Competitors: Similar systems like Siemens IoT or custom ERP integrations.
-- Compliance: Aligns with EU CBAM; generate reports in CSV/PDF for export.
-
-Last Updated: September 29, 2025.
