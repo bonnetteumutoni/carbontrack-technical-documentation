@@ -47,7 +47,7 @@ Installed in factory chimneys for real-time monitoring.
   - CO₂ Sensor: Measures in ppm; converts to kg/s using formula: CO₂ (kg/s) = ppm × flow rate (m³/s) × density (kg/m³).
   - Thermocouple: Measures temperature (°C) for density adjustment.
   - Anemometer: Measures velocity (m/s) for flow rate.
-  - Serial Interface: For boiler runtime and energy data (kWh, liters).
+    
 - **Features**:
   - Real-time tracking: CO₂, temperature, velocity.
   - Alerts: For high emissions or abnormal temperatures/flows.
@@ -56,7 +56,7 @@ Installed in factory chimneys for real-time monitoring.
 - **Implementation Notes**:
   - Firmware: Written in C++ for ESP32 (use Arduino IDE or PlatformIO).
   - Libraries: PubSubClient for MQTT, relevant sensor libs (e.g., MH-Z19 for CO₂).
-  - Power: Stable supply assumed; add battery backup if needed.
+  - Power: Solar panel.
 
 <h3 style="color: orange;">3.2 Backend (Django REST Framework)</h3>
 
