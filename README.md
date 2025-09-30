@@ -157,9 +157,9 @@ uv pip install -r requirements.txt
 
 Set environment variables in .env:
 
-DATABASE_URL, 
-SECRET_KEY, 
-MQTT_BROKER_URL=mqtt://broker.hivemq.com:1883
+DATABASE_URL,<br>
+SECRET_KEY, <br>
+MQTT_BROKER_URL=mqtt://broker.hivemq.com:1883 <br>
 
 
 
