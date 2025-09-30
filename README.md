@@ -389,20 +389,3 @@ API root: https://carbon-track-680e7cff8d27.herokuapp.com/api/
 
 ---
 
-
-<h2 style="color: blue" >📊 Success Metrics</h2>
-
-
-
-System Uptime: 50%+ operational time per factory.
-
-
-
-Data Compliance: 100% factories submitting energy data on schedule.
-
-
-
-Emission Impact: 20%+ factories meeting emissions targets.
-
----
-
