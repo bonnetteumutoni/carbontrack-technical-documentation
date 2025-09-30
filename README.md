@@ -405,12 +405,4 @@ Data Compliance: 100% factories submitting energy data on schedule.
 Emission Impact: 20%+ factories meeting emissions targets.
 
 ---
-<h3 style="color: orange">Click here to see technical documentation</h3>
-
-[Technical Documentation](technicalDocumentation.md)
- 
-<h2 style="color: blue" >📜 License</h2>
-
-
-© 2025 GitHub, Inc. Licensed under the MIT License.
 
