@@ -20,4 +20,4 @@ Welcome to the Carbon Track documentation website repository. This site provides
 
 ## Hosted Link
 
-[Link](https://carbontrack-technical-documentation.vercel.app/)
+[Technical Documentation](https://carbontrack-technical-documentation.vercel.app/)
