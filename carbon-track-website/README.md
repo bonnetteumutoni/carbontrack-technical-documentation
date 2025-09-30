@@ -155,14 +155,5 @@ Replace `'carbontrack-docs'` with your repo name.
 
 ---
 
-## Contact
 
-For questions or contributions, please create an issue or pull request in this repository.
 
----
-
-## License
-
-Distributed under the MIT License.
-
----
