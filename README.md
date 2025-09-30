@@ -215,15 +215,12 @@ Explore endpoints via:
 
 
 
-Swagger UI
+Swagger UI: https://carbon-track-680e7cff8d27.herokuapp.com/api/schema/redoc/
 
 
 
-Redoc
+Redoc: https://documenter.getpostman.com/view/45609889/2sB3HooJrj
 
-
-
-Postman Collection
 
 API root: https://carbon-track-680e7cff8d27.herokuapp.com/api/
 
