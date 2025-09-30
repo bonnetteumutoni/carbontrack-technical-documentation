@@ -170,8 +170,8 @@ Use Postman collection: https://documenter.getpostman.com/view/45609889/2sB3HooJ
 - Risks: Connectivity issues in remote factories; mitigate with offline buffering.
 
 
-Prerequisites
 
+<h2 style="color: blue;"> 9. Prerequisites</h2>
 
 
 
