@@ -18,3 +18,6 @@ Welcome to the Carbon Track documentation website repository. This site provides
 - Testing and Monitoring
 - Maintenance and Scaling
 
+## Hosted Link
+
+[Link](https://carbontrack-technical-documentation.vercel.app/)
