@@ -1,30 +1,168 @@
-# Carbon Track Website
+# Carbon Track Technical Documentation
 
-This is the official website for Carbon Track, a real-time carbon emissions monitoring system for KTDA's tea factories in Kenya.
+Welcome to the Carbon Track documentation website repository. This site provides detailed technical documentation for the Carbon Track project, a real-time carbon emissions monitoring system for KTDA's tea factories.
 
-## 🌱 About Carbon Track
+---
 
-Carbon Track is a comprehensive system designed to monitor and manage carbon emissions in real-time across KTDA's 67 tea factories in Kenya. It ensures compliance with global regulations like the EU CBAM by integrating IoT sensors, a Django REST API, and two web portals (Factory and HQ) to track CO₂ emissions, input energy data, and generate compliance reports.
+## Table of Contents
 
-## 🚀 Features
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technology Stack](#technology-stack)
+- [Getting Started](#getting-started)
+- [System Architecture](#system-architecture)
+- [Components](#components)
+- [API Endpoints](#api-endpoints)
+- [Installation and Deployment](#installation-and-deployment)
+- [Security Considerations](#security-considerations)
+- [Testing and Monitoring](#testing-and-monitoring)
+- [Maintenance and Scaling](#maintenance-and-scaling)
 
-- Real-Time CO₂ Monitoring
-- Energy Usage Input
-- Emissions Leaderboard
-- Historical Visualization
-- Compliance Reporting
-- IoT Integration
+---
 
-## 🛠️ Technology Stack
+## Project Overview
 
-- **Framework**: Next.js 13+ with App Router
-- **Styling**: Tailwind CSS
-- **Language**: TypeScript
-- **Deployment**: Vercel (recommended) or any Next.js compatible platform
+Carbon Track enables KTDA tea factories to monitor and manage carbon emissions in real-time, ensuring compliance with environmental regulations and improving operational efficiency.
 
-## 📦 Installation
+---
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/carbon-track-website.git
-   cd carbon-track-website
+## Features
+
+- Real-time CO₂ monitoring with IoT sensors
+- User-friendly energy usage input portals
+- Emissions leaderboard
+- Historical data visualizations
+- Automated compliance reporting
+
+---
+
+## Technology Stack
+
+- **IoT:** ESP32 microcontroller, CO₂ sensors, thermocouples, anemometers
+- **Backend:** Django 4.2+, Django REST Framework, PostgreSQL, HiveMQ MQTT broker
+- **Frontend:** React.js for web portals
+- **API Docs:** Swagger UI, Redoc, Postman
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (>=16)
+- npm or yarn
+- Git
+
+### Clone and Install Dependencies
+
+git clone https://github.com/your-github-username/carbontrack-docs.git
+cd carbontrack-docs
+npm install
+or
+
+yarn install
+
+text
+
+---
+
+## System Architecture
+
+Modular IoT-cloud-web architecture integrating sensors, MQTT broker, Django backend, PostgreSQL database, and React portals.
+
+---
+
+## Components
+
+- IoT devices in chimneys collecting sensor data
+- Django REST backend managing data and APIs
+- React portals for Factory and HQ users
+
+---
+
+## API Endpoints
+
+Detailed API documentation is available via Swagger UI and Redoc in the live site or local build.
+
+---
+
+## Installation and Deployment
+
+### Build for Production
+
+npm run build
+npm run export
+
+text
+
+### Deploy to GitHub Pages
+
+1. Install GitHub Pages package (if not installed):
+
+npm install --save-dev gh-pages
+
+text
+
+2. Add the following to `package.json` scripts:
+
+"scripts": {
+"predeploy": "next build && next export",
+"deploy": "gh-pages -d out"
+}
+
+text
+
+3. Deploy with:
+
+npm run deploy
+
+text
+
+4. Configure `next.config.js` with your repository name:
+
+module.exports = {
+basePath: '/carbontrack-docs',
+assetPrefix: '/carbontrack-docs/',
+}
+
+text
+
+Replace `'carbontrack-docs'` with your repo name.
+
+---
+
+## Security Considerations
+
+- TLS encrypted communication (MQTT & API)
+- Token-based authentication and role permissions
+- Input validation to prevent injection
+
+---
+
+## Testing and Monitoring
+
+- Unit and integration tests
+- Monitoring with Sentry and Prometheus
+- Success criteria: uptime, data compliance, emission targets
+
+---
+
+## Maintenance and Scaling
+
+- Use Git for version control
+- Redis caching for performance
+- Horizontal scaling and offline buffering for remote sites
+
+---
+
+## Contact
+
+For questions or contributions, please create an issue or pull request in this repository.
+
+---
+
+## License
+
+Distributed under the MIT License.
+
+---
