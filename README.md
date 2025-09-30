@@ -1,3 +1,5 @@
+<body style= "background: black">
+ 
 <h2 style="color: blue" >Carbon Track 🌱</h2>
 
 ---
@@ -250,3 +252,5 @@ Emission Impact: 20%+ factories meeting emissions targets.
 
 
 © 2025 GitHub, Inc. Licensed under the MIT License.
+
+</body>
