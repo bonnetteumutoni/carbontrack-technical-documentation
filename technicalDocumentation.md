@@ -3,7 +3,7 @@
 
 Carbon Track is a carbon emissions monitoring system designed for KTDA's 67 tea factories in Kenya. It addresses the need for real-time CO₂ emissions tracking to comply with global regulations like the EU CBAM. The system integrates IoT sensors for data collection, a backend API for processing, and two web portals (factory-level and HQ-level) for visualization and management.
 
-This document provides technical details on architecture, components, implementation, and operations. It is based on the Product Requirements Document (PRD) and assumes familiarity with the problem statement, objectives, stakeholders, and core features outlined there.
+This document provides technical details on architecture, components, implementation, and operations.
 
 <h3 style="color: orange;"> Key Objectives </h3>
 
@@ -169,3 +169,141 @@ Use Postman collection: https://documenter.getpostman.com/view/45609889/2sB3HooJ
 - Scaling: Add Redis for caching; horizontal scaling for high-traffic portals.
 - Risks: Connectivity issues in remote factories; mitigate with offline buffering.
 
+
+Prerequisites
+
+
+
+
+
+Python 3.13+
+
+
+
+pip or uv package manager
+
+
+
+PostgreSQL database
+
+
+
+Git
+
+
+
+Stable internet for MQTT and API connectivity
+
+Installation
+
+
+
+
+
+Clone the repository:
+
+```sh
+git clone https://github.com/akirachix/carbontrack-backend.git
+cd carbontrack-backend
+```
+
+
+Create and activate a virtual environment:
+
+
+
+
+
+Linux/macOS:
+
+```sh
+python -m venv venv
+source venv/bin/activate
+
+```
+
+Windows:
+
+```sh
+python -m venv venv
+venv\Scripts\activate
+
+```
+
+Install dependencies:
+
+```sh
+uv pip install -r requirements.txt
+
+```
+
+Set environment variables in .env:
+
+DATABASE_URL,<br>
+SECRET_KEY, <br>
+MQTT_BROKER_URL=mqtt://broker.hivemq.com:1883 <br>
+
+
+
+Run database migrations:
+
+```sh
+python manage.py migrate
+
+```
+
+Create a superuser for admin access:
+
+```sh
+python manage.py createsuperuser
+```
+
+
+Collect static files:
+
+```sh
+python manage.py collectstatic
+
+```
+
+Start the development server:
+
+```sh
+python manage.py runserver
+```
+
+IoT Setup
+
+
+
+
+
+Flash ESP32 firmware with sensor libraries (e.g., MH-Z19 for CO₂).
+
+
+
+Configure WiFi and MQTT credentials for HiveMQ.
+
+
+
+Install sensors 1-2 meters up factory chimneys for accurate sampling.
+
+<h2 style="color: blue" >🌐 API Documentation</h2>
+
+
+Explore endpoints via:
+
+
+
+
+
+Swagger UI: https://carbon-track-680e7cff8d27.herokuapp.com/api/schema/redoc/
+
+
+
+Redoc: https://documenter.getpostman.com/view/45609889/2sB3HooJrj
+
+
+API root: https://carbon-track-680e7cff8d27.herokuapp.com/api/
+
+---
