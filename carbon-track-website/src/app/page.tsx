@@ -52,7 +52,7 @@ export default function Home() {
           }}
         >
           <Image
-            src="/images/carbons.jpg"
+            src="/images/carbonemissions.jpg"
             alt="KTDA Tea Factory"
             fill
             style={{ objectFit: 'cover' }}
@@ -406,9 +406,7 @@ export default function Home() {
                   width: '100%',
                   maxWidth: 600,
                   height: 400,
-                  boxShadow: '0 6px 20px rgba(0,0,0,0.15)',
-                }}
-              >
+                  boxShadow: '0 6px 20px rgba(0,0,0,0.15)',}}>
                 <Image
                   src="/images/dashboard.png"
                   alt="Testing and Monitoring Dashboard"
@@ -430,7 +428,7 @@ export default function Home() {
             </ul>
           </ContentSection>
         </AnimatedSection>
-
+ 
         <AnimatedSection id="prerequisites">
           <ContentSection title="Prerequisites">
             <ul>
