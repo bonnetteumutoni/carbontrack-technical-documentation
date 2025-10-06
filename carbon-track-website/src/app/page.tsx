@@ -33,8 +33,8 @@ export default function Home() {
           maxWidth: 1200,
           margin: '0 auto',
           padding: '2rem 3rem 4rem',
-        }}>
-
+        }}
+      >
         <motion.div
           id="landing"
           initial={{ opacity: 0 }}
@@ -154,7 +154,6 @@ export default function Home() {
                 marginTop: '1rem',
                 boxShadow: '0 8px 30px rgba(0,0,0,0.2)',
                 width: '100%',
-                maxWidth: 1000,
                 height: 650,
                 position: 'relative',
               }}
@@ -257,8 +256,7 @@ export default function Home() {
                 <AnimatedCard
                   key={title}
                   style={{ cursor: 'pointer', textAlign: 'center' }}
-                  onClick={() => window.open(href, '_blank')}
-                >
+                  onClick={() => window.open(href, '_blank')}>
                   <h4 style={{ marginBottom: '1rem', cursor: 'pointer' }}>{title}</h4>
                   <Image
                     src={img}
@@ -391,7 +389,7 @@ export default function Home() {
                   style={{ borderRadius: 12, objectFit: 'cover' }}
                 />
               </AnimatedCard>
-         
+
               <div style={{ display: 'flex', alignItems: 'center', height: 400 }}>
                 <svg width="46" height="56" viewBox="0 0 56 56" fill="none">
                   <path d="M8 28h32m0 0l-8-8m8 8l-8 8" stroke="#F79B72" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
@@ -406,7 +404,9 @@ export default function Home() {
                   width: '100%',
                   maxWidth: 600,
                   height: 400,
-                  boxShadow: '0 6px 20px rgba(0,0,0,0.15)',}}>
+                  boxShadow: '0 6px 20px rgba(0,0,0,0.15)',
+                }}
+              >
                 <Image
                   src="/images/dashboard.png"
                   alt="Testing and Monitoring Dashboard"
@@ -428,7 +428,7 @@ export default function Home() {
             </ul>
           </ContentSection>
         </AnimatedSection>
- 
+
         <AnimatedSection id="prerequisites">
           <ContentSection title="Prerequisites">
             <ul>
@@ -453,7 +453,7 @@ export default function Home() {
                 overflowX: 'auto',
               }}
             >
-              {`git clone https://github.com/akirachix/carbontrack-backend.git
+              {`git clone [https://github.com/akirachix/carbontrack-backend.git](https://github.com/akirachix/carbontrack-backend.git)
              cd carbontrack-backend
              python -m venv venv
              source venv/bin/activate  # Or "venv\\Scripts\\activate" on Windows
@@ -489,8 +489,8 @@ export default function Home() {
                 transition={{ duration: 0.3 }}
                 style={{
                   position: 'fixed',
-                  top: '50%',
-                  left: '50%',
+                  top: '5%',
+                  left: '15%',
                   transform: 'translate(-50%, -50%)',
                   maxWidth: '90vw',
                   maxHeight: '90vh',
