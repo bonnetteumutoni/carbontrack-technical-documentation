@@ -221,7 +221,7 @@ export default function Home() {
               priority
             />
             <div className="banner-text">
-              Real-Time Carbon Emissions Monitoring for KTDA's Tea Factories
+              Real-Time Carbon Emissions Monitoring for KTDA&apos;s Tea Factories
             </div>
           </motion.div>
 
@@ -513,7 +513,7 @@ export default function Home() {
                 <ul>
                   <li><b>Core Models</b>: 
                     <ul>
-                      <li>User: Django's built-in User model with custom profile</li>
+                      <li>User: Django&apos;s built-in User model with custom profile</li>
                       <li>Factory: Factory details with location and capacity data</li>
                       <li>MCUDevice: IoT device information with calibration records</li>
                       <li>Emission: Time-series emission data with calculated mass flow</li>
@@ -793,12 +793,12 @@ export default function Home() {
                       </li>
                       <li>Configure WiFi and MQTT credentials:
                         <div className="code-block">
-                          const char* ssid = "your-ssid";<br/>
-                          const char* password = "your-password";<br/>
-                          const char* mqtt_server = "your-mqtt-broker";<br/>
+                          const char* ssid = &quot;your-ssid&quot;;<br/>
+                          const char* password = &quot;your-password&quot;;<br/>
+                          const char* mqtt_server = &quot;your-mqtt-broker&quot;;<br/>
                           const int mqtt_port = 1883;<br/>
-                          const char* mqtt_user = "your-mqtt-user";<br/>
-                          const char* mqtt_password = "your-mqtt-password";
+                          const char* mqtt_user = &quot;your-mqtt-user&quot;;<br/>
+                          const char* mqtt_password = &quot;your-mqtt-password&quot;;
                         </div>
                       </li>
                       <li>Set sampling interval and calibration parameters</li>
@@ -1089,7 +1089,7 @@ export default function Home() {
                   git clone https://github.com/akirachix/carbontrack-backend.git<br/>
                   cd carbontrack-backend<br/>
                   python -m venv venv<br/>
-                  source venv/bin/activate  # Or "venv\\Scripts\\activate" on Windows<br/>
+                  source venv/bin/activate  # Or &quot;venv\\Scripts\\activate&quot; on Windows<br/>
                   pip install -r requirements.txt<br/>
                   cp .env.example .env<br/>
                   # Edit .env with your configuration<br/>
