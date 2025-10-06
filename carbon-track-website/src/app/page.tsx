@@ -133,8 +133,7 @@ export default function Home() {
           /* Motion div for landing */
           .landing {
             position: relative;
-            height: 40vh;
-            max-height: 400px;
+            height: 80vh;
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 6px 25px rgba(0,0,0,0.15);
@@ -145,7 +144,7 @@ export default function Home() {
       </style>
 
       <div className="container">
-        <Sidebar/>
+        <Sidebar />
 
         <main>
           {/* Landing Banner */}
@@ -154,13 +153,12 @@ export default function Home() {
             className="landing"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
+            transition={{ duration: 1 }}>
             <Image
               src="/images/carbonemissions.jpg"
               alt="KTDA Tea Factory"
               fill
-              sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 1200px"
+              sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 1200px "
               style={{ objectFit: 'cover' }}
               priority
             />
@@ -489,7 +487,7 @@ export default function Home() {
                   />
                 </AnimatedCard>
                 <svg width="46" height="56" viewBox="0 0 56 56" fill="none" style={{ alignSelf: 'center' }}>
-                  <path d="M8 28h32m0 0l-8-8m8 8l-8 8" stroke="#F79B72" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M8 28h32m0 0l-8-8m8 8l-8 8" stroke="#F79B72" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
                 <AnimatedCard
                   style={{
