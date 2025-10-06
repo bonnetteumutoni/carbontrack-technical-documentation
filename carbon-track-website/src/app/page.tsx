@@ -206,7 +206,6 @@ export default function Home() {
         <Sidebar />
 
         <main>
-          {/* Landing Banner */}
           <motion.div
             id="landing"
             className="landing"
@@ -226,7 +225,6 @@ export default function Home() {
             </div>
           </motion.div>
 
-          {/* Title */}
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -236,7 +234,6 @@ export default function Home() {
             Carbon Track
           </motion.h1>
 
-          {/* Overview Section */}
           <AnimatedSection id="overview">
             <div className="section-spacing">
               <ContentSection title="System Overview">
@@ -311,7 +308,6 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          {/* Stakeholders */}
           <AnimatedSection id="stakeholders">
             <div className="section-spacing">
               <ContentSection title="System Stakeholders">
@@ -333,7 +329,6 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          {/* Technology Stack */}
           <AnimatedSection id="technology-stack">
             <div className="section-spacing">
               <ContentSection title="Technology Stack">
@@ -375,7 +370,6 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          {/* System Architecture */}
           <AnimatedSection id="system-architecture">
             <div className="section-spacing">
               <ContentSection title="System Architecture">
@@ -451,7 +445,6 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          {/* Components Section */}
           <AnimatedSection id="components">
             <div className="section-spacing">
               <ContentSection title="System Components">
@@ -580,7 +573,6 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          {/* API Endpoints */}
           <AnimatedSection id="api-endpoints">
             <div className="section-spacing">
               <ContentSection title="API Endpoints">
@@ -634,7 +626,6 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          {/* API Documentation */}
           <AnimatedSection id="apidocumentation">
             <div className="section-spacing">
               <ContentSection title="API Documentation">
@@ -685,7 +676,6 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          {/* Installation and Deployment */}
           <AnimatedSection id="installation">
             <div className="section-spacing">
               <ContentSection title="Installation and Deployment">
@@ -772,7 +762,6 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          {/* IoT Setup */}
           <AnimatedSection id="iotsetup">
             <div className="section-spacing">
               <ContentSection title="IoT Device Setup">
@@ -867,7 +856,6 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          {/* Security Considerations */}
           <AnimatedSection id="security-considerations">
             <div className="section-spacing">
               <ContentSection title="Security Considerations">
@@ -918,7 +906,6 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          {/* Testing and Monitoring */}
           <AnimatedSection id="testing-monitoring">
             <div className="section-spacing">
               <ContentSection title="Testing and Monitoring">
@@ -1008,7 +995,6 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          {/* Maintenance and Scaling */}
           <AnimatedSection id="maintenance-scaling">
             <div className="section-spacing">
               <ContentSection title="Maintenance and Scaling">
@@ -1050,7 +1036,6 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          {/* Prerequisites */}
           <AnimatedSection id="prerequisites">
             <div className="section-spacing">
               <ContentSection title="System Prerequisites">
@@ -1096,7 +1081,6 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          {/* Installation Snippet */}
           <AnimatedSection id="installation-snippet">
             <div className="section-spacing">
               <ContentSection title="Installation Commands">
@@ -1129,7 +1113,6 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          {/* Zoom Overlay */}
           <AnimatePresence>
             {zoomedImage && (
               <>
